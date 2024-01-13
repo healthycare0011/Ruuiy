@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --green: #DCFC35;
+    --dark: #121318;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    color: white;
+    font-family: Poppins,sans-serif;
+    background-color: var(--dark);
+    user-select: none;
+    user-zoom: none;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 25px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo p{
+    font-weight: bolder;
+    font-size: 20px;
+}
+span{
+    color: var(--green);
+}
+.right{
+    display: flex;
+    gap: 15px;
+}
+
+.navProfile{
+    height: 50px;
+    width: 50px;
+    margin-top: -10px;
+    border-radius: 50%;
+}
+.carousels{
+    margin-top: 25px;
+    height: 150px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.carousel{
+    height: 100%;
+    width: 500px;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.offers{
+    margin-top: 25px;
+    height: 100px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.offer{
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 500px;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+.offer img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.offer p{
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: var(--dark);
+    padding: 5px;
+    opacity: 0.8;
+    width: 100%;
+    color: #DCFC35;
+}
+.recommend{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recommendRows{
+    display: flex;
+    overflow-y: scroll;
+    height: 100px;
+    width: 100%;
+    gap: 15px;
+}
+.r{
+    border-radius: 10px;
+    height: 100%;
+    width: 100px;
+    padding: 110px;
+    background-color: blue;
+}
+.category{
+    margin-top: 25px;
+    height: 30px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.c{
+    height: 20px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px 15px;
+    align-items: center;
+    text-align: center;
+}
+.games{
+    margin-top: 25px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.game{
+    height: 100px;
+    width: 140px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-weight: bolder;
+    align-items: end;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    color: #DCFC35;
+}
+.game img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+}
+.gameP{
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: var(--dark);
+    padding: 5px;
+    opacity: 0.8;
+    width: 100%;
+}
